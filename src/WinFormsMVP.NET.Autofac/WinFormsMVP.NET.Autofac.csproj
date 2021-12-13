@@ -1,18 +1,17 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net6.0-windows</TargetFramework>
-    <UseWindowsForms>true</UseWindowsForms>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFramework>net6.0-windows</TargetFramework>
+        <UseWindowsForms>true</UseWindowsForms>
+        <Version>6.0.0</Version>
+    </PropertyGroup>
 
+    <ItemGroup>
+        <PackageReference Include="Autofac" Version="6.3.0" />
+    </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Autofac" Version="6.3.0" />
-  </ItemGroup>
-
-
-  <ItemGroup>
-    <ProjectReference Include="..\WinFormsMVP.NET\WinFormsMVP.NET.csproj" />
-  </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\WinFormsMVP.NET\WinFormsMVP.NET.csproj" />
+    </ItemGroup>
 
 </Project>
